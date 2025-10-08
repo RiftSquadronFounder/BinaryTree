@@ -81,7 +81,7 @@ public:
 		if (_leftNode != nullptr) {
 			counter++;
 		}
-		return counter;
+		return *counter;
 	}
 
 
@@ -111,17 +111,17 @@ public:
 
 	
 	void LeftNodeAssign(BinaryTree<T>* Node) {
-		*_leftNode = Node;
+		_leftNode = Node;
 	}
 
 	
 	void RightNodeAssign(BinaryTree<T>* Node) {
-		*_rightNode = Node;
+		_rightNode = Node;
 	}
 
 	
 	void ParentNodeAssign(BinaryTree<T>* Node) {
-		*_parentNode = Node;
+		_parentNode = Node;
 	}
 
 
