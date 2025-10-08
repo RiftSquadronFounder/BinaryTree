@@ -40,10 +40,10 @@ public:
 
 
 private:
-	T** _value;
-	BinaryTree** _leftNode;
-	BinaryTree** _rightNode;
-	BinaryTree** _parentNode;
+	T* _value;
+	BinaryTree* _leftNode;
+	BinaryTree* _rightNode;
+	BinaryTree* _parentNode;
 };
 
 
