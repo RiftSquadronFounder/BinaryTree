@@ -20,6 +20,14 @@ BinaryTree<T>::BinaryTree(T* value) {
 	_value = value;
 }
 
+template <typename T>
+BinaryTree<T>::BinaryTree(T value) {
+	_leftNode = nullptr;
+	_rightNode = nullptr;
+	_parentNode = nullptr;
+	*_value = value;
+}
+
 
 
 template <typename T>

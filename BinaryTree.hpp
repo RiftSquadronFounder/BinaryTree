@@ -9,6 +9,7 @@ class BinaryTree
 public:
 	BinaryTree();
 	BinaryTree(T* value);
+	BinaryTree(T value);
 	~BinaryTree();
 
 
