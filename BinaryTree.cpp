@@ -25,6 +25,7 @@ BinaryTree<T>::BinaryTree(T value) {
 	_leftNode = nullptr;
 	_rightNode = nullptr;
 	_parentNode = nullptr;
+	_value = new T();
 	*_value = value;
 }
 
@@ -150,7 +151,9 @@ void BinaryTree<T>::ParentNodeDisconnect() {
 
 template <typename T>
 T* BinaryTree<T>::GetValue() {
-	return _value;
+	if (_value != nullptr) {
+		return _value;
+	}
 }
 
 
