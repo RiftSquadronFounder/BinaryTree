@@ -2,7 +2,12 @@
 #include "BinaryTree.hpp"
 
 int main() {
-	BinaryTree<int>* binaryTree1 = new BinaryTree<int>();
+	try {
+		BinaryTree<int>* var1 = new BinaryTree<int>();
+	}
+	catch (std::exception& ex){
+		std::cout << ex.what();
+	}
 
 	
 
